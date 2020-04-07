@@ -1,1 +1,0 @@
-<p class="c-title mb"> <span>[field:typename /]</span> <a class="more" href="[field:typelink /]" title="[field:typename /]"> <i class="iconfont icon-right"></i></a> </p>

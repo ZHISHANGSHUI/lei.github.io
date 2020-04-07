@@ -1,6 +1,0 @@
-INSERT INTO `dede_feedback` VALUES('1','49','0','5','525100505@qq.com','SEO培训案例：寻找SEO项目并不难，重点在于学好SEO排名！','127.0.0.1','','1','1559359058','0','0','1','feedback','/plus/dedemao-comment/img/default_head_img.gif','评论测试');
-INSERT INTO `dede_feedback` VALUES('2','60','0','1','匿名','阿里云提示织梦DedeCMS v5.7 注册用户任意文件删除漏洞','0.0.0.0','','1','1564033845','1','0','0','feedback','1','测试下');
-INSERT INTO `dede_feedback` VALUES('3','60','0','1','admin','阿里云提示织梦DedeCMS v5.7 注册用户任意文件删除漏洞','0.0.0.0','','1','1564034046','1','0','1','feedback','1','秀站网到此一游！');
-INSERT INTO `dede_feedback` VALUES('4','64','0','7','admin','比特币财经类新闻资讯博客织梦模板','0.0.0.0','','1','1564034076','1','0','1','feedback','1','秀站网专注织梦模板建设，购买模板联系QQ：2361928288');
-INSERT INTO `dede_feedback` VALUES('5','60','0','0','可乐','','0.0.0.0','','1','1574149856','0','0','0','feedback','0','秀站网到此一游！');
-INSERT INTO `dede_feedback` VALUES('6','41','0','0','可乐','','0.0.0.0','','1','1574151379','0','0','0','feedback','0','源码购买联系QQ：2361928288');

@@ -1,4 +1,0 @@
-function CheckSubmit(){
-	return true; 
-}
-

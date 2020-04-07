@@ -1,1 +1,0 @@
-<li class="clearfix"><span class="list list-1">[field:global name=autoindex/].</span><a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a></li>
