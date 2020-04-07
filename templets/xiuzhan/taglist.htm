@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/style/css/base.css" rel="stylesheet">
+<link href="/style/css/m.css" rel="stylesheet">
+<script src="/style/js/jquery-1.8.3.min.js" ></script>
+<script src="/style/js/comm.js"></script>
+<!--[if lt IE 9]>
+<script src="/style/js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<article> 
+  <!--lbox begin-->
+  <div class="lbox">
+    <div class="whitebg bloglist">
+      <h2 class="htitle"><span class="hnav">TAG结果</span><a href="{dede:global.cfg_cmsurl/}/">主页</a> &gt; <a href='tags.php'>TAG标签</a> &gt; {dede:field.title /}</h2>
+      <ul>
+        {dede:list pagesize='15'}
+        <li>
+          <h3 class="blogtitle"><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a></h3>
+          [field:array runphp='yes']@me = (strpos(@me['litpic'],'defaultpic') ? "" : "<span class='blogpic imgscale'><i><a href='{@me['typeurl']}'>{@me['typename']}</a></i><a href='{@me['typeurl']}'><img src='{@me['litpic']}' alt='{@me['title']}'></a></span>"); [/field:array]
+          <p class="blogtext">[field:description function="cn_substr(@me,620)"/]... </p>
+          <p class="bloginfo"><i class="avatar"><img src="/style/images/avatar.jpg"></i><span>[field:writer/]</span><span>[field:pubdate function="GetDateMK(@me)"/]</span><span>[field:click/]次</span></p>
+          <a href="[field:arcurl/]" title="[field:title /]" class="viewmore">阅读更多</a> </li>
+        {/dede:list}
+      </ul>
+    </div>
+   <!--pagelist-->
+   <div class="pagelist whitebg"><ul>{dede:pagelist listsize='2' listitem='index pre pageno next end '/}</ul></div>
+  </div>
+  {dede:include filename="right.htm"/}
+</article>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

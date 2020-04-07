@@ -1,0 +1,6 @@
+INSERT INTO `dede_taglist` VALUES('1','38','0','11','仓库管理');
+INSERT INTO `dede_taglist` VALUES('2','37','0','11','抖音蓝V');
+INSERT INTO `dede_taglist` VALUES('3','36','0','11','开业典礼');
+INSERT INTO `dede_taglist` VALUES('4','13','0','2','田宁');
+INSERT INTO `dede_taglist` VALUES('5','10','0','2','网贷');
+INSERT INTO `dede_taglist` VALUES('6','8','0','2','余额宝');

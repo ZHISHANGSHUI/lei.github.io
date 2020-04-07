@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>最新TAG标签_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/style/css/base.css" rel="stylesheet">
+<link href="/style/css/m.css" rel="stylesheet">
+<script src="/style/js/jquery-1.8.3.min.js" ></script>
+<script src="/style/js/comm.js"></script>
+<!--[if lt IE 9]>
+<script src="/style/js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<article>
+  <div class="whitebg">
+    <h2 class="htitle">最新TAG标签</h2>
+    <ul class="site_tj">
+     {dede:tag row='60' sort='new'}<li><a href="[field:link/]">[field:tag /]</a></li>{/dede:tag}
+    </ul>
+  </div>
+  <div class="whitebg">
+    <h2 class="htitle">当月热门标签</h2>
+    <ul class="site_tj site_yx">
+     {dede:tag row='60' sort='month'}<li><a href="[field:link/]">[field:tag /]</a></li>{/dede:tag}
+    </ul>
+  </div>
+  <div class="whitebg">
+    <h2 class="htitle">随机TAG标签</h2>
+    <ul class="site_tj site_yx">
+     {dede:tag row='50' sort='rand'}<li><a href="[field:link/]">[field:tag /]</a></li>{/dede:tag}
+    </ul>
+  </div>
+</article>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

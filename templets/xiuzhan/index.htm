@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/style/css/base.css" rel="stylesheet">
+<link href="/style/css/m.css" rel="stylesheet">
+<script src="/style/js/jquery-1.8.3.min.js" ></script>
+<script src="/style/js/comm.js"></script>
+<!--[if lt IE 9]>
+<script src="/style/js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<article> 
+  <!--lbox begin-->
+  <div class="lbox"> 
+    <!--banbox begin-->
+    <div class="banbox">
+      <div class="banner">
+        <div id="banner" class="fader">
+          {dede:arclist titlelen='45' row='5' flag='p,f'}
+          <li class="slide" ><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"></a></li>
+          {/dede:arclist}
+          <div class="fader_controls">
+            <div class="page prev" data-target="prev"></div>
+            <div class="page next" data-target="next"></div>
+            <ul class="pager_list">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--banbox end--> 
+    <!--headline begin-->
+    <div class="headline">
+      <ul>
+        {dede:arclist titlelen='45' row='2' flag='p,c'}
+        <li><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <!--headline end-->
+    <div class="clearblank"></div>
+    <div class="tab_box whitebg">
+      <div class="tab_buttons">
+        <ul>
+          <li class="newscurrent"><a href="javascrpt::">程序人生</a></li>
+          <li><a href="javascrpt::">CSS3|HTML5</a></li>
+          <li><a href="javascrpt::">SEO教程</a></li>
+          <li><a href="javascrpt::">网络营销</a></li>
+        </ul>
+      </div>
+      <div class="newstab">
+        <div class="newsitem">
+          <div class="newspic">
+            <ul>
+              {dede:arclist titlelen='65' row='2' typeid='8' flag='p,c'}
+              <li><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></li>
+              {/dede:arclist} 
+            </ul>
+          </div>
+          <ul class="newslist">
+            {dede:arclist titlelen='65' row='5' typeid='8'}
+            <li><i></i><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a>
+              <p>[field:description function="cn_substr(@me,120)"/]...</p>
+            </li>
+            {/dede:arclist} 
+          </ul>
+        </div>
+        <div class="newsitem">
+          <div class="newspic">
+            <ul>
+              {dede:arclist titlelen='65' row='2' typeid='9' flag='p,c'}
+              <li><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></li>
+              {/dede:arclist} 
+            </ul>
+          </div>
+          <ul class="newslist">
+            {dede:arclist titlelen='65' row='5' typeid='9'}
+            <li><i></i><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a>
+              <p>[field:description function="cn_substr(@me,120)"/]...</p>
+            </li>
+            {/dede:arclist} 
+          </ul>
+        </div>
+        <div class="newsitem">
+          <div class="newspic">
+            <ul>
+              {dede:arclist titlelen='65' row='2' typeid='10' flag='p,c'}
+              <li><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></li>
+              {/dede:arclist} 
+            </ul>
+          </div>
+          <ul class="newslist">
+            {dede:arclist titlelen='65' row='5' typeid='8'}
+            <li><i></i><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a>
+              <p>[field:description function="cn_substr(@me,120)"/]...</p>
+            </li>
+            {/dede:arclist} 
+          </ul>
+        </div>
+        <div class="newsitem" >
+          <div class="newspic">
+            <ul>
+              {dede:arclist titlelen='65' row='2' typeid='10' flag='p,c'}
+              <li><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></li>
+              {/dede:arclist} 
+            </ul>
+          </div>
+          <ul class="newslist">
+            {dede:arclist titlelen='65' row='5' typeid='10'}
+            <li><i></i><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a>
+              <p>[field:description function="cn_substr(@me,120)"/]...</p>
+            </li>
+            {/dede:arclist} 
+          </ul>
+        </div>
+        <div class="newsitem" >
+          <div class="newspic">
+            <ul>
+              {dede:arclist titlelen='65' row='2' typeid='11' flag='p,c'}
+              <li><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></li>
+              {/dede:arclist} 
+            </ul>
+          </div>
+          <ul class="newslist">
+            {dede:arclist titlelen='65' row='5' typeid='11'}
+            <li><i></i><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a>
+              <p>[field:description function="cn_substr(@me,120)"/]...</p>
+            </li>
+            {/dede:arclist} 
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--tab_box end-->
+    <div class="zhuanti whitebg">
+      <h2 class="htitle"><span class="hnav">{dede:channelartlist typeid='3' row='5'}<a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>{/dede:channelartlist}</span>网站模板</h2>
+      <ul>
+         {dede:arclist titlelen='65' row='6' typeid='3' flag='p'}
+        <li> <i class="ztpic"><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"></a></i> <b>[field:title /]</b><span>[field:description function="cn_substr(@me,120)"/]...</span><a href="" target="_blank" class="readmore">详细</a> </li>
+         {/dede:arclist} 
+      </ul>
+    </div>
+    <div class="ad whitebg"> <img src="/style/images/longad.jpg"> </div>
+    <div class="whitebg bloglist">
+      <h2 class="htitle">最新博文</h2>
+      <ul>
+        {dede:arclist titlelen='45' row='10'}
+        <li>
+          <h3 class="blogtitle"><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a></h3>
+          [field:array runphp='yes']@me = (strpos(@me['litpic'],'defaultpic') ? "" : "<span class='blogpic imgscale'><i><a href='{@me['typeurl']}'>{@me['typename']}</a></i><a href='{@me['typeurl']}'><img src='{@me['litpic']}' alt='{@me['title']}'></a></span>"); [/field:array]
+          <p class="blogtext">[field:description function="cn_substr(@me,620)"/]... </p>
+          <p class="bloginfo"><i class="avatar"><img src="/style/images/avatar.jpg"></i><span>[field:writer/]</span><span>[field:pubdate function="GetDateMK(@me)"/]</span><span>[field:click/]次</span></p>
+          <a href="[field:arcurl/]" title="[field:title /]" class="viewmore">阅读更多</a> </li>
+       {/dede:arclist}
+      </ul>
+    </div>
+    <!--bloglist end--> 
+  </div>
+  <div class="rbox">
+    <div class="card">
+      <h2>我的名片</h2>
+      <p>网名：DanceSmile | 即步非烟</p>
+      <p>职业：Web前端设计师、网页设计</p>
+      <p>现居：安徽省-黄山市</p>
+      <p>Email：2361928288@qq.com</p>
+      <ul class="linkmore">
+        <li><a href="/" target="_blank" class="iconfont icon-zhuye" title="网站地址"></a></li>
+        <li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2361928288@qq.com" target="_blank" class="iconfont icon-youxiang" title="我的邮箱"></a></li>
+        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2361928288&site=qq&menu=yes" target="_blank" class="iconfont icon---" title="QQ联系我"></a></li>
+        <li id="weixin"><a href="#" target="_blank" class="iconfont icon-weixin" title="关注我的微信"></a><i><img src="/style/images/wx.png"></i></li>
+      </ul>
+    </div>
+    <div class="whitebg notice">
+      <h2 class="htitle">随机阅读</h2>
+      <ul>
+        {dede:arclist titlelen='45' row='4' orderby='rand'}
+        <li><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="whitebg paihang">
+      <h2 class="htitle">点击排行</h2>
+      {dede:arclist titlelen='45' row='1' flag='c,p' orderby='click'}<section class="topnews imgscale"><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></section>{/dede:arclist}
+      <ul>
+        {dede:arclist titlelen='45' row='8' orderby='click'}
+        <li><i></i><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]"</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="whitebg tuijian">
+      <h2 class="htitle">站长推荐</h2>
+      {dede:arclist titlelen='45' row='1' flag='c,p'}<section class="topnews imgscale"><a href="[field:arcurl/]" title="[field:title /]" ><img src="[field:litpic/]" alt="[field:title /]"><span>[field:title /]</span></a></section>{/dede:arclist}
+      <ul>
+        {dede:arclist titlelen='45' row='6' flag='p' orderby='rand'}
+        <li><a href="/"><i><img src="[field:litpic/]" alt="[field:title /]"></i>
+          <p>[field:title /]</p>
+          </a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="ad whitebg imgscale">
+      <ul>
+        <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=3g0dcr18" target="_blank"><img src="/style/images/ad.jpg"></a>
+      </ul>
+    </div>
+    <div class="whitebg wenzi">
+      <h2 class="htitle">猜你喜欢</h2>
+      <ul>
+        {dede:arclist titlelen='45' row='8' orderby='click' orderby='rand'}
+        <li><a href="[field:arcurl/]" title="[field:title /]" >[field:title /]"</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="ad whitebg imgscale">
+      <ul>
+        <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=3g0dcr18" target="_blank"><img src="/style/images/ad02.jpg"></a>
+      </ul>
+    </div>
+    <div class="whitebg tongji">
+      <h2 class="htitle">站点信息</h2>
+      <ul>
+        <li><b>建站时间</b>：2019-02-24</li>
+        <li><b>网站程序</b>：织梦CMS7.5</li>
+        <li><b>主题模板</b>：《今夕何夕》</li>
+        <li><b>文章统计</b>：{dede:sql sql="select count(*) as c from dede_archives where channel=1"}[field:c /] 篇{/dede:sql} </li>
+        <li><b>源码统计</b>：{dede:sql sql="select count(*) as c from dede_archives where channel=3"}[field:c /] 篇{/dede:sql} </li>
+        <li><b>微信公众号</b>：扫描二维码，关注我们</li>
+        <img src="/style/images/wxgzh.jpg" class="tongji_gzh">
+      </ul>
+    </div>
+    <div class="links whitebg">
+      <h2 class="htitle"><span class="sqlink"><a href="/">申请链接</a></span>友情链接</h2>
+      <ul>
+        {dede:flink row='24' type='text' titlelen='26' linktype = '2' typeid='1'}<li>[field:link /]</li>{/dede:flink}
+      </ul>
+    </div>
+  </div>
+</article>
+<footer>
+  <div class="box">
+    <div class="wxbox">
+      <ul>
+        <li><img src="/style/images/wxgzh.jpg"><span>微信公众号</span></li>
+        <li><img src="/style/images/wx.png"><span>我的微信</span></li>
+      </ul>
+    </div>
+    <div class="endnav">
+      <p><b>站点声明：</b></p>
+      <p>1、本站个人博客模板，均为叶清本人设计，个人可以使用，但是未经许可不得用于任何商业目的。</p>
+      <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2361928288@qq.com" target="_blank">2361928288@qq.com</a></p>
+      <p>Copyright © 个人博客网站模板 All Rights Reserved. 备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank">{dede:global name='cfg_beian'/}</a></p>
+    </div>
+  </div>
+  <a href="#">
+  <div class="top"></div>
+  </a> </footer>
+</body>
+</html>
