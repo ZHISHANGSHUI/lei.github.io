@@ -1,0 +1,1 @@
+<li><a href="[field:url/]">[field:arctitle/]</a>[field:msg/]</li>
